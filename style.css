@@ -2,8 +2,12 @@
 body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
+<<<<<<< HEAD
   background-color: #f0f8ff;
   /* light blue background */
+=======
+  background-color: #f0f8ff; /* light blue background */
+>>>>>>> 9b0d20b6f894e13451687342bfc455b83166e534
   min-height: 100vh;
   color: #333;
 }
@@ -12,8 +16,12 @@ body {
 header {
   text-align: center;
   padding: 20px;
+<<<<<<< HEAD
   background: #4682b4;
   /* steel blue */
+=======
+  background: #4682b4; /* steel blue */
+>>>>>>> 9b0d20b6f894e13451687342bfc455b83166e534
   color: white;
   font-size: 24px;
   font-weight: bold;
@@ -26,22 +34,35 @@ nav {
   gap: 15px;
   margin: 20px;
 }
+<<<<<<< HEAD
 
 nav button {
   padding: 10px 20px;
   border: none;
   background: #20b2aa;
   /* teal */
+=======
+nav button {
+  padding: 10px 20px;
+  border: none;
+  background: #20b2aa; /* teal */
+>>>>>>> 9b0d20b6f894e13451687342bfc455b83166e534
   color: white;
   border-radius: 8px;
   cursor: pointer;
   transition: transform 0.2s;
 }
+<<<<<<< HEAD
 
 nav button:hover {
   transform: scale(1.1);
   background: #2e8b57;
   /* darker green */
+=======
+nav button:hover {
+  transform: scale(1.1);
+  background: #2e8b57; /* darker green */
+>>>>>>> 9b0d20b6f894e13451687342bfc455b83166e534
 }
 
 /* Sections */
@@ -51,6 +72,7 @@ section {
   width: 60%;
   background: white;
   border-radius: 12px;
+<<<<<<< HEAD
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -65,6 +87,15 @@ section {
 /* Inputs */
 input,
 select {
+=======
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.hidden { display: none; }
+.active { display: block; }
+
+/* Inputs */
+input, select {
+>>>>>>> 9b0d20b6f894e13451687342bfc455b83166e534
   display: block;
   margin: 10px 0;
   padding: 8px;
@@ -75,8 +106,12 @@ select {
 
 /* Buttons */
 .primary-btn {
+<<<<<<< HEAD
   background: #ff4500;
   /* orange-red */
+=======
+  background: #ff4500; /* orange-red */
+>>>>>>> 9b0d20b6f894e13451687342bfc455b83166e534
   color: white;
   border: none;
   padding: 10px 15px;
@@ -84,10 +119,15 @@ select {
   cursor: pointer;
   transition: 0.3s;
 }
+<<<<<<< HEAD
 
 .primary-btn:hover {
   background: #e63946;
   /* darker red */
+=======
+.primary-btn:hover {
+  background: #e63946; /* darker red */
+>>>>>>> 9b0d20b6f894e13451687342bfc455b83166e534
   transform: scale(1.05);
 }
 
