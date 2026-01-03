@@ -2,49 +2,60 @@
 <html lang="en">
 
 <head>
-
-    <title>HRMS Frontend</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>HRMS Dashboard</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Human Resource Management System</h1>
+  <header>
+    <h1>🌟 Human Resource Management System 🌟</h1>
+  </header>
 
-    <!-- Login -->
-    <div id="login-section">
-        <h2>Login</h2>
-        <input id="email" placeholder="Email">
-        <input id="password" type="password" placeholder="Password">
-        <button onclick="login()">Login</button>
-    </div>
+  <nav>
+    <button onclick="showSection('login')">Login</button>
+    <button onclick="showSection('employees')">Employees</button>
+    <button onclick="showSection('attendance')">Attendance</button>
+  </nav>
 
-    <!-- Employee Management -->
-    <div id="employee-section" class="hidden">
-        <h2>Employees</h2>
-        <div id="employee-list"></div>
+  <!-- Login Section -->
+  <section id="login" class="active">
+    <h2>Login</h2>
+    <input id="email" placeholder="Email">
+    <input id="password" type="password" placeholder="Password">
+    <button class="primary-btn" onclick="login()">Login</button>
+  </section>
 
-        <h3>Add Employee</h3>
-        <input id="empName" placeholder="Name">
-        <input id="empEmail" placeholder="Email">
-        <input id="empDept" placeholder="Department">
-        <input id="empSalary" placeholder="Salary">
-        <button onclick="addEmployee()">Add Employee</button>
-    </div>
+  <!-- Employees Section -->
+  <section id="employees" class="hidden">
+    <h2>Employees</h2>
+    <div id="employee-list"></div>
+    <h3>Add Employee</h3>
+    <input id="empName" placeholder="Name">
+    <input id="empEmail" placeholder="Email">
+    <input id="empDept" placeholder="Department">
+    <input id="empSalary" placeholder="Salary">
+    <button class="primary-btn" onclick="addEmployee()">Add Employee</button>
+  </section>
 
-    <!-- Attendance -->
-    <div id="attendance-section" class="hidden">
-        <h2>Mark Attendance</h2>
-        <input id="attEmpId" placeholder="Employee ID">
-        <input id="attDate" type="date">
-        <select id="attStatus">
-            <option value="Present">Present</option>
-            <option value="Absent">Absent</option>
-            <option value="Leave">Leave</option>
-        </select>
-        <button onclick="markAttendance()">Submit</button>
-    </div>
+  <!-- Attendance Section -->
+  <section id="attendance" class="hidden">
+    <h2>Mark Attendance</h2>
+    <input id="attEmpId" placeholder="Employee ID">
+    <input id="attDate" type="date">
+    <select id="attStatus">
+      <option value="Present">Present ✅</option>
+      <option value="Absent">Absent ❌</option>
+      <option value="Leave">Leave 🌴</option>
+    </select>
+    <button class="primary-btn" onclick="markAttendance()">Submit</button>
+  </section>
 
-    <script src="script.js"></script>
+  <footer>
+    <p>✨ Designed by Kaavya ✨</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
