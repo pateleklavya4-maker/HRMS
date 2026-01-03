@@ -1,5 +1,5 @@
 // Base API URL (adjust to your backend)
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://iqucgywawldntkncvtmx.supabase.co/rest/v1";
 
 // Show/Hide sections
 function showSection(id) {
