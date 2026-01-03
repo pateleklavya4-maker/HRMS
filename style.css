@@ -1,0 +1,101 @@
+/* Solid background colour */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: #f0f8ff;
+  /* light blue background */
+  min-height: 100vh;
+  color: #333;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 20px;
+  background: #4682b4;
+  /* steel blue */
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px;
+}
+
+nav button {
+  padding: 10px 20px;
+  border: none;
+  background: #20b2aa;
+  /* teal */
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+nav button:hover {
+  transform: scale(1.1);
+  background: #2e8b57;
+  /* darker green */
+}
+
+/* Sections */
+section {
+  margin: 30px auto;
+  padding: 20px;
+  width: 60%;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.hidden {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+/* Inputs */
+input,
+select {
+  display: block;
+  margin: 10px 0;
+  padding: 8px;
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Buttons */
+.primary-btn {
+  background: #ff4500;
+  /* orange-red */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.primary-btn:hover {
+  background: #e63946;
+  /* darker red */
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #4682b4;
+  color: white;
+  font-style: italic;
+}
