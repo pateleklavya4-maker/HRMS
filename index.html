@@ -1,32 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">    
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample HTML Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>HRMS Frontend</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <h1>Welcome to My Sample Page</h1>
-    </header>
-    <main>
-        <section>
-            <h2>About This Page</h2>
-            <p>This is a simple HTML page to demonstrate the structure of an HTML document.</p>
-        </section>
-        <section>
-            <h2>Features</h2>
-            <ul>
-                <li>Header Section</li>
-                <li>Main Content Area</li>
-                <li>Footer Section</li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Sample Page. All rights reserved.</p>
-    </footer>   
+    <h1>Human Resource Management System</h1>
+
+    <!-- Login -->
+    <div id="login-section">
+        <h2>Login</h2>
+        <input id="email" placeholder="Email">
+        <input id="password" type="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+    </div>
+
+    <!-- Employee Management -->
+    <div id="employee-section" class="hidden">
+        <h2>Employees</h2>
+        <div id="employee-list"></div>
+
+        <h3>Add Employee</h3>
+        <input id="empName" placeholder="Name">
+        <input id="empEmail" placeholder="Email">
+        <input id="empDept" placeholder="Department">
+        <input id="empSalary" placeholder="Salary">
+        <button onclick="addEmployee()">Add Employee</button>
+    </div>
+
+    <!-- Attendance -->
+    <div id="attendance-section" class="hidden">
+        <h2>Mark Attendance</h2>
+        <input id="attEmpId" placeholder="Employee ID">
+        <input id="attDate" type="date">
+        <select id="attStatus">
+            <option value="Present">Present</option>
+            <option value="Absent">Absent</option>
+            <option value="Leave">Leave</option>
+        </select>
+        <button onclick="markAttendance()">Submit</button>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
