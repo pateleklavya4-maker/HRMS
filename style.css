@@ -2,8 +2,7 @@
 body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
-  background-color: #f0f8ff;
-  /* light blue background */
+  background-color: #f0f8ff; /* light blue background */
   min-height: 100vh;
   color: #333;
 }
@@ -12,8 +11,7 @@ body {
 header {
   text-align: center;
   padding: 20px;
-  background: #4682b4;
-  /* steel blue */
+  background: #4682b4; /* steel blue */
   color: white;
   font-size: 24px;
   font-weight: bold;
@@ -30,8 +28,7 @@ nav {
 nav button {
   padding: 10px 20px;
   border: none;
-  background: #20b2aa;
-  /* teal */
+  background: #20b2aa; /* teal */
   color: white;
   border-radius: 8px;
   cursor: pointer;
@@ -40,8 +37,7 @@ nav button {
 
 nav button:hover {
   transform: scale(1.1);
-  background: #2e8b57;
-  /* darker green */
+  background: #2e8b57; /* darker green */
 }
 
 /* Sections */
@@ -51,19 +47,19 @@ section {
   width: 60%;
   background: white;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-.hidden {
-  display: none;
+.hidden { 
+  display: none; 
 }
 
-.active {
-  display: block;
+.active { 
+  display: block; 
 }
 
 /* Inputs */
-input,
+input, 
 select {
   display: block;
   margin: 10px 0;
@@ -75,8 +71,7 @@ select {
 
 /* Buttons */
 .primary-btn {
-  background: #ff4500;
-  /* orange-red */
+  background: #ff4500; /* orange-red */
   color: white;
   border: none;
   padding: 10px 15px;
@@ -86,8 +81,7 @@ select {
 }
 
 .primary-btn:hover {
-  background: #e63946;
-  /* darker red */
+  background: #e63946; /* darker red */
   transform: scale(1.05);
 }
 
